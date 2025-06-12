@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Sialou</title>
-    <link rel="stylesheet" href="contact.css"><!-- Lien vers votre fichier CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Sialou</title>
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-    <header>
-        <h1>Sialou Market</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav-link">Qui nous sommes ? </a></li>
-                <li><a href="produits.html" class="nav-link">Produits</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-               
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Formulaire de contact</h2>
-            <form action="form.php" method="post">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
+  <header>
+    <h1>Sialou Market</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Qui nous sommes ?</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+  <main>
+    <section>
+      <h2>Formulaire de contact</h2>
+      <form action="https://formsubmit.co/sialoumarket75@gmail.com" method="POST">
+        <input type="text" name="nom" required placeholder="Votre nom" />
+        <input type="email" name="email" required placeholder="Votre email" />
+        <input type="text" name="sujet" required placeholder="Sujet" />
+        <textarea name="message" required placeholder="Votre message"></textarea>
 
-                <label for="sujet">Sujet :</label>
-                <input type="text" id="sujet" name="sujet" required>
+        <!-- Supprime le CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false" />
+        
+        <!-- Redirige vers la vraie page merci.html sur GitHub -->
+        <input type="hidden" name="_next" value=" https://ralphassane.github.io/sialoumarket/merci.html" />
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- Anti-bot -->
+        <input type="text" name="_honey" style="display: none" />
 
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
-        <section>
-            <h2>Informations du magasin</h2>
-            <p>Adresse : 76, Avenue Jean Jaures 75019</p>
-            <p>Téléphone : 06 50 23 54 74 </p>
-            <p>Email : asspate3@yahoo.fr</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Sialou Market. Tous droits réservés.</p>
-    </footer>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Informations du magasin</h2>
+      <p>Adresse : 76, Avenue Jean Jaurès 75019</p>
+      <p>Téléphone : 06 50 23 54 74</p>
+      <p>Email : asspate3@yahoo.fr</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sialou Market. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
