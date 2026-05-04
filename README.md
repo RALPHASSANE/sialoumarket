@@ -20,8 +20,7 @@ Afin d'assurer un recensement exhaustif et une maintenance simplifiée, le proje
 ## 🚀 Fonctionnalités & Standards
 
 * **Design Responsive :** Adaptabilité multi-support (Flexbox/Grid) respectant les standards du Web.
-* **Navigation & Expérience :** Utilisation de l'API DOM pour des transitions fluides sans rechargement lourd.
-* **Traitement de Données :** Double approche pour le formulaire de contact (Hybride Saas via FormSubmit et Backend PHP local).
+* **Traitement de Données :**  approche externe pour le formulaire de contact  via FormSubmit .
 
 ---
 
@@ -51,4 +50,3 @@ Pour répondre aux exigences de gestion du patrimoine, les mesures suivantes ont
 
 1. **Recensement local :** `git clone https://github.com/RALPHASSANE/sialoumarket.git`
 2. **Déploiement Statique :** Consultation directe des fichiers `.html`.
-3. **Environnement PHP :** Nécessite un serveur applicatif (WAMP/XAMPP) pour tester la logique backend dans le répertoire `/www` ou `/htdocs`.
