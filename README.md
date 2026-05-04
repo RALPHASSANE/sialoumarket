@@ -44,11 +44,6 @@ Pour répondre aux exigences de gestion du patrimoine, les mesures suivantes ont
 
 ---
 
-## ✨ Pistes d'Optimisation (Amélioration Continue)
-
-* **Centralisation :** Appliquer le principe **DRY (Don't Repeat Yourself)** en fusionnant les scripts JS dupliqués.
-* **Standardisation :** Migration vers **PHPMailer** pour une gestion SMTP plus robuste et sécurisée.
-* **Accessibilité :** Amélioration des balises ARIA pour la conformité RGAA.
 
 ---
 
