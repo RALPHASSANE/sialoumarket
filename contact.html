@@ -5,6 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Sialou</title>
   <link rel="stylesheet" href="contact.css" />
+  <style>
+    /* Styles pour la case de consentement RGPD */
+    .gdpr-consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 20px 0;
+      padding: 12px;
+      background-color: #fdf5e6; /* var(--sand-beige) */
+      border-radius: 8px;
+      font-size: 0.9em;
+      line-height: 1.4;
+      color: #3d2b1f; /* var(--earth-brown) */
+    }
+    .gdpr-consent input[type="checkbox"] {
+      margin-top: 4px;
+    }
+    .gdpr-consent a {
+      color: #ff6600; /* var(--clay-orange) */
+      text-decoration: underline;
+    }
+    /* Styles pour la section des mentions légales */
+    .legal-section {
+      margin-top: 40px;
+      padding: 24px 32px;
+      background-color: #f4f4f4; /* var(--neutral-gray) */
+      border-radius: 8px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .legal-section h2 {
+      font-size: 1.6em;
+    }
+    .legal-section h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: var(--earth-brown);
+      font-size: 1.1em;
+    }
+    .legal-section p {
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -36,7 +79,14 @@
         <!-- Anti-bot -->
         <input type="text" name="_honey" style="display: none" />
 
-        <button type="submit">Envoyer</button>
+        <div class="gdpr-consent">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">
+            En cochant cette case, je reconnais avoir pris connaissance des <a href="#mentions-legales">mentions légales et de la politique de confidentialité</a> ci-dessous, et j'accepte que mes informations soient utilisées exclusivement dans le cadre de ma demande.
+          </label>
+        </div>
+
+        <button type="submit" class="btn">Envoyer</button>
       </form>
     </section>
 
@@ -45,6 +95,29 @@
       <p>Adresse : 76, Avenue Jean Jaurès 75019</p>
       <p>Téléphone : 06 50 23 54 74</p>
       <p>Email : asspate3@yahoo.fr</p>
+    </section>
+
+    <section id="mentions-legales" class="legal-section">
+      <h2>Mentions Légales & Politique de Confidentialité</h2>
+
+      <h3>1. Identité de l'éditeur</h3>
+      <p><strong>Nom du site :</strong> Sialou Market</p>
+      <p><strong>Adresse :</strong> 76 Avenue Jean Jaurès, 75019 Paris, France</p>
+      <p><strong>Contact e-mail :</strong> <a href="mailto:sialoumarket75@gmail.com">sialoumarket75@gmail.com</a></p>
+
+      <h3>2. Hébergement</h3>
+      <p>Ce site est hébergé par GitHub Pages, un service de GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States.</p>
+
+      <h3>3. Gestion des données personnelles </h3>
+      <p><strong>Finalité :</strong> Les données (nom, email, sujet, message) soumises via le formulaire de contact sont collectées dans le seul et unique but de traiter votre demande. Elles ne sont pas stockées sur le site et ne seront utilisées à aucune autre fin (ni marketing, ni revente).</p>
+      <p><strong>Base légale :</strong> Le traitement est basé sur votre consentement explicite, matérialisé par la case à cocher obligatoire.</p>
+      <p><strong>Destinataire :</strong> Les données sont transmises par e-mail au propriétaire du magasin via le service tiers sécurisé FormSubmit.co.</p>
+
+      <h3>4. Vos droits sur vos données</h3>
+      <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour l'exercer, contactez-nous à <a href="mailto:sialoumarket75@gmail.com">sialoumarket75@gmail.com</a>.</p>
+
+      <h3>5. Cookies</h3>
+      <p>Ce site n'utilise aucun cookie de suivi ou publicitaire. Seuls des cookies techniques strictement nécessaires à son fonctionnement peuvent être utilisés.</p>
     </section>
   </main>
 
